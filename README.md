@@ -1,15 +1,12 @@
 # kafka-producer-consumer-example
 
-## Run Zookeeper broker: 
-### docker run -d --name zookeeper -p 2181:2181 confluent/zookeeper
-
+## Run Zookeeper & Kafka in single command: 
+~~~
+docker run -d --name zookeeper -p 2181:2181 confluent/zookeeper
 ~~~
 
-With Docker Compose
-docker-compose -f ./kafka-config/docker-compose.yml up -d
-
-Manual Run One by One
-============================
+## Manual Run One by One
+~~~
 Run Zookeeper broker: 
 docker run -d --name zookeeper -p 2181:2181 confluent/zookeeper
 
