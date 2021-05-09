@@ -5,6 +5,18 @@
 docker run -d --name zookeeper -p 2181:2181 confluent/zookeeper
 ~~~
 
+
+## HTTP Request
+~~~
+curl --location --request POST 'http://localhost:8085/users' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "dhananjaya",
+    "mobile": "9040010697",
+    "address": "Bangalore"
+}'
+~~~
+
 ## Manual Run One by One
 ~~~
 Run Zookeeper broker: 
@@ -26,14 +38,4 @@ Kafka UI:
 docker run -e "KMAGIC_ALLOW_TOPIC_DELETE=true" -d -p 8080:80 --name kafka-magic digitsy/kafka-magic
 give this details to access: clusterName/Bootstrap Servers = 172.17.0.3:9092
 
-
-Request
-==========
-curl --location --request POST 'http://localhost:8085/users' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "name": "dhananjaya",
-    "mobile": "9040010697",
-    "address": "Bangalore"
-}'
 ~~~
