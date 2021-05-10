@@ -3,6 +3,8 @@
 ## Run Zookeeper & Kafka in single command: 
 ~~~
 docker compose -f ./kafka-config/docker-compose.yml up -d
+(OR)
+docker-compose -f ./kafka-config/docker-compose.yml up -d
 ~~~
 
 
