@@ -7,4 +7,4 @@ app:
     consumer-group-id: user-consumer-test
 
 server:
-  port: 8085
+  port: 8080
