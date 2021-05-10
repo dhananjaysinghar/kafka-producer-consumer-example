@@ -7,6 +7,6 @@ ENTRYPOINT ["java","-jar","kafka-producer-consumer-example-0.0.1-SNAPSHOT.jar"]
 #docker build -f Dockerfile -t kafka-producer-consumer-example .
 #docker images
 #docker compose -f ./kafka-config/docker-compose.yml up -d
-#docker run --name kafka-producer-consumer-example --rm -p 8085:8085 kafka-producer-consumer-example
+#docker run --name kafka-producer-consumer-example --rm -p 8080:8080 kafka-producer-consumer-example
 
 
