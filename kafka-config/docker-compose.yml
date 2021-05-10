@@ -1,5 +1,9 @@
 version: '2'
 services:
+  kafka-magic:
+    image: digitsy/kafka-magic
+    ports:
+      - "8085:80"
   zookeeper:
     image: wurstmeister/zookeeper
     expose:
