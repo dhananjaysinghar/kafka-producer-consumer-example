@@ -2,7 +2,7 @@
 
 ## Run Zookeeper & Kafka in single command: 
 ~~~
-docker run -d --name zookeeper -p 2181:2181 confluent/zookeeper
+docker compose -f ./kafka-config/docker-compose.yml up -d
 ~~~
 
 
